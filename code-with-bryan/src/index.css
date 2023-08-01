@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #f926ae;
+}
+
+::selection {
+  color: white;
+  background: #f926ae;
+}
+
+body {
+  overflow-x: hidden;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(40, 28, 81, 1) 0%,
+    rgba(13, 18, 36, 1) 100%
+  );
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(40, 28, 81, 1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f926ae;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 525px) {
+  body {
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+}

@@ -1,0 +1,10 @@
+.default-select select {
+  margin-top: 10px;
+  border: 2px solid #2392;
+  background: antiquewhite;
+  color: black;
+  width: 70vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,28 @@
+.default-input input {
+  border: 2px solid #2392;
+  background: antiquewhite;
+  border-radius: 6px;
+  color: white;
+  width: 70vw;
+  margin-bottom: 20px;
+  font-size: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.default-input input {
+  margin-left: 24px;
+  height: 3vh;
+  padding-left: 10px;
+}
+.default-input label {
+  color: white;
+  margin-left: 30px;
+}
+
+.default-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}

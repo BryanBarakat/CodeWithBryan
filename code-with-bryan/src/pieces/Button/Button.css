@@ -1,0 +1,54 @@
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin: 0 !important;
+  width: 40vw !important;
+}
+
+.button-container button {
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  background: rgb(241, 38, 178);
+  background: linear-gradient(
+    53deg,
+    rgba(241, 38, 178, 1) 0%,
+    rgba(132, 40, 237, 1) 100%
+  );
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  white-space: nowrap;
+}
+
+.button-container button:last-of-type:hover {
+  padding-right: 40px;
+}
+
+.button-container button:last-of-type:hover img {
+  margin-left: 38%;
+}
+
+.button-container button:first-of-type:hover {
+  transform: scale(1.02);
+}
+
+.button-container button img {
+  margin-left: 16%;
+  vertical-align: middle;
+  margin-bottom: 1%;
+  width: 10px;
+  height: 10px;
+  filter: invert(1);
+  transition: all 100ms ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-container button img {
+    display: none;
+  }
+}

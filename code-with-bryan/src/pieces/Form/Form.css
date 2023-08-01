@@ -1,0 +1,140 @@
+/* Add some spacing and a background color to the form container */
+.booking-form-container {
+  text-align: center;
+  /* margin-top: 4%; */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-form-container h1 {
+  font-weight: 700;
+}
+
+.booking-form-container button {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(241, 38, 178);
+  background: linear-gradient(
+    53deg,
+    rgba(241, 38, 178, 1) 0%,
+    rgba(132, 40, 237, 1) 100%
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-form-container button:hover {
+  background-color: #6c7a89;
+}
+
+.booking-form-container textarea {
+  resize: none;
+  margin-top: 6px;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  width: 98%;
+  height: 20vh;
+  border: 2px solid #2392;
+  background: antiquewhite;
+  color: black;
+}
+
+.date-and-time--booking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.booking-form-container input,
+.booking-form-container select {
+  border: 2px solid #2392;
+  background: antiquewhite;
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.full-name-form input,
+.email-form input {
+  margin-left: 1.5px;
+  width: 98%;
+}
+
+.date-and-time--booking input {
+  width: 36vw;
+  margin: 0;
+}
+
+/* Add some spacing between form elements */
+.booking-form-container label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.booking-form-container span {
+  color: #f926ae;
+}
+
+@media only screen and (max-width: 900px) {
+  .date-sub {
+    margin-bottom: 10px;
+  }
+
+  .date-and-time--booking {
+    flex-direction: column;
+  }
+
+  .date-and-time--booking input {
+    width: 70vw;
+    height: 2vh;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .booking-form-container {
+    margin-top: 20%;
+    width: 70vw;
+  }
+
+  .booking-form-container button {
+    font-size: 14px;
+    width: 70vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .booking-form-container textarea {
+    width: 65vw;
+  }
+
+  .full-name-form input,
+  .email-form input {
+    width: 65vw;
+  }
+
+  .date-and-time--booking input {
+    width: 65vw;
+  }
+}

@@ -1,0 +1,422 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+  user-select: none;
+
+  font-size: smaller;
+}
+
+.hamburger {
+  display: none;
+  right: 3.8%;
+  top: 3.8%;
+  z-index: 100000;
+}
+
+.navbar-container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38px;
+  height: 3px;
+  margin-top: 2px;
+  background-color: grey;
+  transition: all 300ms ease-in-out;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.modal-container h2 {
+  margin-bottom: 10%;
+}
+
+.modal-content {
+  background-color: #303030;
+  /* color: #303030; */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-width: 400px;
+  width: 80%;
+  z-index: 10000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  color: #8244ff;
+}
+
+/* Add additional styles for your contact form elements here */
+
+/* Example styles for a simple form */
+.modal-container form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.modal-container label {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.navbar-container span {
+  color: #f926ae;
+}
+
+.modal-container input,
+.modal-container select,
+.modal-container textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal-container select {
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  width: 94%;
+}
+
+.modal-container button {
+  padding: 12px 20px;
+  background: rgb(241, 38, 178);
+  background: linear-gradient(
+    53deg,
+    rgba(241, 38, 178, 1) 0%,
+    rgba(132, 40, 237, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 90%;
+  transition: all 300ms ease;
+}
+
+.modal-container button:hover {
+  background: #6c7a89;
+}
+.navbar-logo,
+.navbar-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.navbar-options {
+  gap: 26px;
+}
+
+.navbar-options h3 {
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  color: #d3d8e8;
+}
+
+.navbar-options h3:not(.navbar-options h3:last-of-type):hover {
+  color: #ff57c3;
+}
+
+.navbar-options h3:last-of-type {
+  padding: 8px 24px;
+  background-color: #8244ff;
+  border-radius: 6px;
+}
+
+.navbar-options h3:last-of-type:hover {
+  transform: scale(1.02);
+}
+
+.navbar-logo {
+  gap: 6px;
+  cursor: pointer;
+}
+
+.navbar-container img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.navbar-container img:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-container {
+    padding: 16px 3%;
+  }
+
+  .navbar-options h3:last-of-type {
+    padding: 6px 18px;
+    background-color: #8244ff;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-container {
+    padding-top: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+    position: fixed;
+    background-color: #12142c;
+    border-bottom: 3px solid #262b42;
+    width: 100vw;
+    margin-left: -8.1%;
+    z-index: 100000000;
+  }
+
+  .navbar-options {
+    display: none;
+    position: fixed;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #12142c;
+    border-left: 3px solid #262b42;
+    gap: 0%;
+    height: 200vh;
+    z-index: 1000;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+  }
+
+  .navbar-options h3:last-of-type {
+    padding: 30px;
+    border-radius: 0px;
+    background-color: #12143f;
+  }
+
+  .navbar-options h3 {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: #f6f6f6;
+    background-color: #12143f;
+    padding: 30px;
+    width: 70vw;
+    text-transform: uppercase;
+    text-align: right;
+    /* border-top: 3px solid #242424; */
+  }
+
+  .navbar-logo {
+    margin-left: 3%;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-right: 5%;
+  }
+
+  .navbar-container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    height: 2px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .modal-content {
+    /* Adjust styles for the modal content on even smaller screens */
+    max-width: 90%; /* For example, you can change the width further */
+    padding: 10px; /* You can adjust the padding for better spacing */
+  }
+
+  .modal-container label {
+    /* Adjust label styles for smaller screens */
+    font-size: 14px; /* For example, you can change the font size */
+  }
+
+  .modal-container input,
+  .modal-container select,
+  .modal-container textarea {
+    /* Adjust input, select, and textarea styles for smaller screens */
+    font-size: 14px; /* For example, you can change the font size */
+  }
+
+  .modal-container button {
+    /* Adjust button styles for smaller screens */
+    font-size: 16px; /* For example, you can change the font size */
+    padding: 10px 16px; /* You can adjust the padding for better spacing */
+  }
+
+  .close-btn {
+    font-size: 14px; /* You can adjust the close button font size */
+  }
+  .navbar-container {
+    padding-top: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: -4%;
+  }
+
+  .navbar-logo {
+    font-size: 12px;
+  }
+
+  .navbar-logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .navbar-logo h2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .navbar-container {
+    font-size: 20px;
+    margin-top: 0.5%;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .navbar-container {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .navbar-container {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 3300px) {
+  .navbar-container {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .modal-content {
+    /* Adjust styles for the modal content on smaller screens */
+    max-width: 80%; /* For example, you can change the width */
+    padding: 20px; /* You can adjust the padding for better spacing */
+  }
+}
+
+@keyframes pop-menu {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes pop-menu-out {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .navbar-options {
+    top: 45%;
+  }
+}
+
+@media screen and (max-height: 625px) {
+  .navbar-options {
+    top: 50%;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .navbar-options {
+    top: 55%;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .navbar-options h3 {
+    padding: 20px;
+    width: 100%;
+    margin-right: 40px;
+  }
+
+  .navbar-options h3:last-of-type {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .modal-content {
+    font-size: 28px;
+    max-width: 900px;
+  }
+
+  .modal-container input,
+  .modal-container textarea,
+  .modal-container select {
+    font-size: 30px;
+  }
+
+  .modal-content button {
+    font-size: 28px;
+  }
+
+  .close-btn {
+    font-size: 26px;
+  }
+}

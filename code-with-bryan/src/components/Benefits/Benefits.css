@@ -1,0 +1,323 @@
+.benefits-container {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: center;
+  background: rgb(33, 30, 70);
+  background: radial-gradient(
+    circle,
+    rgba(33, 30, 70, 1) 0%,
+    rgba(13, 18, 36, 1) 100%
+  );
+  width: 100vw;
+  margin-left: -10%;
+  border-top: 3px solid #262b42;
+  border-bottom: 3px solid #262b42;
+  user-select: none;
+}
+
+.image1,
+.image3 {
+  opacity: 0;
+  transform: rotate(-20deg) scale(0.8);
+  transition: all 300ms ease-in;
+}
+
+.image2,
+.image4 {
+  opacity: 0;
+  transform: rotate(20deg) scale(0.8);
+  transition: all 300ms ease-in;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: 0.4s;
+}
+
+.animateText {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.world {
+  filter: invert(56%) sepia(47%) saturate(3194%) hue-rotate(222deg)
+    brightness(99%) contrast(104%);
+}
+
+.timer {
+  filter: invert(52%) sepia(30%) saturate(3305%) hue-rotate(224deg)
+    brightness(102%) contrast(102%);
+}
+
+.course {
+  filter: invert(79%) sepia(69%) saturate(4396%) hue-rotate(291deg)
+    brightness(109%) contrast(106%);
+}
+
+.wrench {
+  filter: invert(84%) sepia(25%) saturate(563%) hue-rotate(105deg)
+    brightness(84%) contrast(92%);
+}
+
+.why-bryan {
+  width: 70vw;
+  white-space: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-container h3 {
+  font-size: 20px;
+  color: #9e7cff;
+}
+
+.item .item-logo--benefits {
+  width: 30px;
+  height: 30px;
+}
+
+.item .subitem1--benefits {
+  text-align: left;
+}
+
+.item .subitem1--benefits:nth-of-type(1) {
+  margin-left: 6%;
+}
+
+.benefits-items {
+  margin-top: 5%;
+}
+
+.item {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #d3d8e8;
+  width: 36vw;
+}
+
+.move-cont2,
+.move-cont4 {
+  margin-left: 5%;
+}
+
+.move-cont1,
+.move-cont3 {
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .image-benefits-desc {
+    width: 400px;
+  }
+
+  .benefits-container h3 {
+    font-size: 16px;
+  }
+
+  .item .item-logo--benefits {
+    width: 40px;
+    height: 40px;
+  }
+
+  .benefits-items {
+    margin-top: 5%;
+  }
+
+  .item {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 8%;
+  }
+
+  .item h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #d3d8e8;
+    width: 36vw;
+  }
+
+  .item h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image-benefits-desc {
+    width: 300px;
+  }
+
+  .benefits-container h3 {
+    font-size: 14px;
+  }
+
+  .benefits-items {
+    margin-top: 15%;
+  }
+
+  .item {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 4%;
+  }
+
+  .item h2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #d3d8e8;
+    width: 36vw;
+  }
+
+  .item h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-benefits-desc {
+    width: 80vw;
+  }
+
+  .benefits-container h3 {
+    font-size: 18px;
+    margin-left: -2%;
+  }
+
+  .benefits-items {
+    margin-top: 25%;
+  }
+
+  .item {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
+
+  .item .image-benefits-desc {
+    margin-top: 4%;
+  }
+
+  .item h2 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: -2%;
+    color: #d3d8e8;
+    width: 90vw;
+  }
+
+  .item h1 {
+    font-size: 26px;
+    margin-left: -2%;
+  }
+
+  .move-cont2,
+  .move-cont4,
+  .move-cont1,
+  .move-cont3 {
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .benefits-container {
+    margin-left: -4.2%;
+  }
+
+  .benefits-container h3 {
+    font-size: 14px;
+  }
+
+  .item h2 {
+    font-size: 14px;
+  }
+
+  .item h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .benefits-container h3 {
+    font-size: 13px;
+  }
+
+  .item h2 {
+    font-size: 13px;
+  }
+
+  .item h1 {
+    font-size: 21px;
+  }
+
+  .features-benefits {
+    font-size: 20px;
+  }
+
+  .why-bryan {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .item .item-logo--benefits {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.rotate-fade-in-image-right {
+  animation: rotateFadeInAnimationRight 0.4s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.rotate-fade-in-image-left {
+  animation: rotateFadeInAnimationLeft 0.4s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes rotateFadeInAnimationRight {
+  from {
+    opacity: 0;
+    transform: rotate(-20deg) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes rotateFadeInAnimationLeft {
+  from {
+    opacity: 0;
+    transform: rotate(20deg) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .benefits-container h3 {
+    font-size: 30px;
+  }
+
+  .benefits-container h2 {
+    font-size: 30px;
+  }
+}

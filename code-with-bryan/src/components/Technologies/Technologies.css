@@ -1,0 +1,179 @@
+.header-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10%;
+  text-align: center;
+  user-select: none;
+}
+
+.tech-container h3 {
+  font-size: 20px;
+  color: #9e7cff;
+}
+
+.body-tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 60%; /* Adjust the max-width as needed */
+  margin-top: 10% !important;
+  margin: 0 auto;
+}
+
+.body-tech-container img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+  padding: 32px;
+  background-color: antiquewhite;
+  border: 6px solid #2392;
+  /* background-color: rgba(40, 28, 81, 1);
+  border: 6px solid rgba(40, 48, 81, 1); */
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.body-tech-container.animateTech img:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.body-tech-container.animateTech img:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s; /* Add a slight delay for the second box */
+}
+
+.body-tech-container.animateTech img:nth-of-type(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s; /* Add a slight delay for the third box */
+}
+.body-tech-container.animateTech img:nth-of-type(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* Add a slight delay for the fourth box */
+}
+.body-tech-container.animateTech img:nth-of-type(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.body-tech-container.animateTech img:nth-of-type(6) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s; /* Add a slight delay for the second box */
+}
+
+.body-tech-container.animateTech img:nth-of-type(7) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s; /* Add a slight delay for the third box */
+}
+.body-tech-container.animateTech img:nth-of-type(8) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s; /* Add a slight delay for the fourth box */
+}
+.body-tech-container.animateTech img:nth-of-type(9) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+
+.body-tech-container.animateTech img:nth-of-type(10) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.1s; /* Add a slight delay for the second box */
+}
+
+.body-tech-container.animateTech img:nth-of-type(11) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.2s; /* Add a slight delay for the third box */
+}
+.body-tech-container.animateTech img:nth-of-type(12) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.3s; /* Add a slight delay for the fourth box */
+}
+.body-tech-container.animateTech img:nth-of-type(13) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.4s;
+}
+
+.body-tech-container.animateTech img:nth-of-type(14) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.5s; /* Add a slight delay for the second box */
+}
+
+.body-tech-container.animateTech img:nth-of-type(15) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.6s; /* Add a slight delay for the third box */
+}
+.body-tech-container.animateTech img:nth-of-type(16) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.7s; /* Add a slight delay for the fourth box */
+}
+
+/* Add a media query for smaller screen sizes */
+@media (max-width: 768px) {
+  .body-tech-container {
+    max-width: 90%; /* Adjust the max-width for smaller screens */
+    margin-top: 60%;
+  }
+
+  .tech-container h3 {
+    font-size: 16px;
+  }
+
+  .header-tech {
+    margin-top: 40%;
+  }
+
+  .sub-title-tech--container {
+    width: 80vw;
+    white-space: wrap;
+  }
+
+  .sub-title-tech--container h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 525px) {
+  .tech-container h3 {
+    font-size: 14px;
+  }
+
+  .body-tech-container {
+    margin-top: 80%;
+  }
+
+  .body-tech-container img {
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .body-tech-container img {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+  }
+}
